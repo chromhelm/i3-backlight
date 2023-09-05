@@ -116,137 +116,7 @@
               "x": 710,
               "y": 340
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -277,15 +147,20 @@
               "threats": []
             },
             "id": "93ee126d-0ea3-4170-9f3f-9f53d97887c6",
+            "labels": [
+              "Data Package"
+            ],
             "source": {
               "cell": "c166c90d-dd1d-4b23-b1bf-e5e93f9e37d7"
             },
             "target": {
               "cell": "2532cabc-3002-4ab0-8e39-d633f170b673"
             },
-            "vertices": [],
-            "labels": [
-              "Data Package"
+            "vertices": [
+              {
+                "x": 450,
+                "y": 340
+              }
             ]
           },
           {
@@ -317,15 +192,15 @@
               "threats": []
             },
             "id": "37fc72ca-0dff-4d8a-978f-2db7b13158f0",
+            "labels": [
+              "KeyboardInput"
+            ],
             "source": {
               "cell": "2532cabc-3002-4ab0-8e39-d633f170b673"
             },
             "target": {
               "cell": "a6713044-e3df-42dc-b308-6511734a1cfc"
             },
-            "labels": [
-              "KeyboardInput"
-            ],
             "vertices": [
               {
                 "x": 990,
@@ -366,6 +241,9 @@
               "threats": []
             },
             "id": "7d732378-1989-4e93-84c9-60ca91044f89",
+            "labels": [
+              "Key press"
+            ],
             "source": {
               "x": 323,
               "y": 187
@@ -377,10 +255,11 @@
               {
                 "x": 350,
                 "y": 187
+              },
+              {
+                "x": 410,
+                "y": 210
               }
-            ],
-            "labels": [
-              "Key press"
             ]
           },
           {
@@ -404,6 +283,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "id": "2532cabc-3002-4ab0-8e39-d633f170b673",
             "data": {
               "type": "tm.Process",
@@ -428,8 +308,7 @@
                   "score": ""
                 }
               ]
-            },
-            "zIndex": 11
+            }
           },
           {
             "position": {
@@ -452,8 +331,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "a6713044-e3df-42dc-b308-6511734a1cfc",
             "zIndex": 12,
+            "id": "a6713044-e3df-42dc-b308-6511734a1cfc",
             "data": {
               "type": "tm.Actor",
               "name": "Laptop",
@@ -463,6 +342,25 @@
               "providesAuthentication": false,
               "hasOpenThreats": false,
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 660,
+              "y": 160
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "c43b25f4-09fa-4d04-a9bc-6dd1aa346921",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Text",
+              "name": "Arbitrary Text",
+              "hasOpenThreats": false
             }
           }
         ]
