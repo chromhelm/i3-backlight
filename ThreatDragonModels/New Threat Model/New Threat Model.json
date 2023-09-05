@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 90,
-              "y": 130
+              "x": 210,
+              "y": 160
             },
             "size": {
               "width": 112.5,
@@ -38,8 +38,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "52ec68e5-3ef1-4374-83e7-46c59de67926",
             "zIndex": 1,
+            "id": "52ec68e5-3ef1-4374-83e7-46c59de67926",
             "data": {
               "type": "tm.Actor",
               "name": "Presenter",
@@ -72,8 +72,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "c166c90d-dd1d-4b23-b1bf-e5e93f9e37d7",
             "zIndex": 2,
+            "id": "c166c90d-dd1d-4b23-b1bf-e5e93f9e37d7",
             "data": {
               "type": "tm.Process",
               "name": "Wireless Presenter",
@@ -84,6 +84,44 @@
               "hasOpenThreats": false,
               "threats": []
             }
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              ""
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "3f2399b7-cafd-4ef7-aac1-51a47641e446",
+            "source": {
+              "x": 710,
+              "y": 130
+            },
+            "target": {
+              "x": 710,
+              "y": 340
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 250
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -103,7 +141,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Data Package",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -113,65 +151,179 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "40606c9e-c6ea-4db1-8187-d4eac40e1d00",
+            "id": "93ee126d-0ea3-4170-9f3f-9f53d97887c6",
             "source": {
-              "cell": "52ec68e5-3ef1-4374-83e7-46c59de67926"
+              "cell": "c166c90d-dd1d-4b23-b1bf-e5e93f9e37d7"
             },
             "target": {
-              "cell": "c166c90d-dd1d-4b23-b1bf-e5e93f9e37d7"
-            }
+              "cell": "2532cabc-3002-4ab0-8e39-d633f170b673"
+            },
+            "vertices": [],
+            "labels": [
+              "Data Package"
+            ]
           },
           {
-            "shape": "trust-broundary-curve",
+            "shape": "flow",
             "attrs": {
               "line": {
-                "targetMarker": "",
-                "sourceMarker": ""
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
               }
             },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": ""
-                  }
-                }
-              }
-            ],
             "data": {
-              "type": "tm.Boundary",
-              "name": "",
+              "type": "tm.Flow",
+              "name": "KeyboardInput",
               "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
             },
-            "id": "3f2399b7-cafd-4ef7-aac1-51a47641e446",
+            "id": "37fc72ca-0dff-4d8a-978f-2db7b13158f0",
             "source": {
-              "x": 300,
-              "y": 110
+              "cell": "2532cabc-3002-4ab0-8e39-d633f170b673"
             },
             "target": {
-              "x": 350,
-              "y": 280
+              "cell": "a6713044-e3df-42dc-b308-6511734a1cfc"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+            "labels": [
+              "KeyboardInput"
+            ],
+            "vertices": [
+              {
+                "x": 990,
+                "y": 233
+              },
+              {
+                "x": 1010,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Key press",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "7d732378-1989-4e93-84c9-60ca91044f89",
+            "source": {
+              "x": 323,
+              "y": 187
+            },
+            "target": {
+              "cell": "c166c90d-dd1d-4b23-b1bf-e5e93f9e37d7"
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 187
+              }
+            ],
+            "labels": [
+              "Key press"
+            ]
+          },
+          {
+            "position": {
+              "x": 822,
+              "y": 200
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "USB Dongle"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "2532cabc-3002-4ab0-8e39-d633f170b673",
+            "data": {
+              "type": "tm.Process",
+              "name": "USB Dongle",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "zIndex": 11
+          },
+          {
+            "position": {
+              "x": 980,
+              "y": 110
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Laptop"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "a6713044-e3df-42dc-b308-6511734a1cfc",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Laptop",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
             }
           }
         ]
